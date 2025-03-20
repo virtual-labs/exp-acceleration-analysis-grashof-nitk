@@ -41,6 +41,10 @@ em:current font size
     width: 3rem;
     height: 2.8rem;
   }
+  .table-grid span {
+    width: 6rem;
+    font-size: 1.2rem;
+  }
 }
 
 /***************************** */
@@ -162,6 +166,10 @@ em:current font size
     height: 100%;
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  .table-grid span {
+    width: 7rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -331,6 +339,29 @@ em:current font size
     /* height: 100%; */
     image-rendering: crisp-edges;
     -moz-image-rendering: crisp-edges;
+  }
+  .table-grid span {
+    width: 5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .table-grid span {
+    width: 4rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 22em) {
+  .table-grid span {
+    width: 3.6rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 20em) {
+  .table-grid span {
+    width: 3.2rem;
+    font-size: 0.8rem;
   }
 }
 

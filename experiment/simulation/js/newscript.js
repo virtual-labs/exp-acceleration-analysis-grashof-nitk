@@ -793,62 +793,60 @@ function checkGrashof() {
 
 function drawacc(context) {
   document.getElementById("datatable1").innerHTML =
-    "\
-<table>\
-<tr><th>Link</th><th>Length</th><th>&theta;</th><th>&omega;</th><th>V</th><th>&alpha;</th><th>A<sub>c</sub></th><th>A<sub>t</sub></th><th>A</th></tr>\
-<tr><td>r2</td><td>" +
+    "<div class='table-grid'><span>Link</span><span>Length</span><span>&theta;</span><span>&omega;</span><span>V</span><span>&alpha;</span><span>A<sub>c</sub></span><span>A<sub>t</sub></span><span>A</span></div>\
+<div class='table-grid'><span>r2</span><span>" +
     r2 +
-    "</td><td>" +
+    "</span><span>" +
     roundd(theta2, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(omega2, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(r2 * omega2, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(alpha2, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(acccb, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(acctb, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(acclb, 2) +
-    "</td></tr>\
-<tr><td>r3</td><td>" +
+    "</span></div>\
+<div class='table-grid'><span>r3</span><span>" +
     r3 +
-    "</td><td>" +
+    "</span><span>" +
     roundd(theta3, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(omega3, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(r3 * omega3, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(alpha3, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(accccb, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(acctcb, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(acclcb, 2) +
-    "</td></tr>\
-<tr><td>r4</td><td>" +
+    "</span></div>\
+<div class='table-grid'><span>r4</span><span>" +
     r4 +
-    "</td><td>" +
+    "</span><span>" +
     roundd(theta4, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(omega4, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(r4 * omega4, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(alpha4, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(acccc, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(acctc, 2) +
-    "</td><td>" +
+    "</span><span>" +
     roundd(acclc, 2) +
-    "</td></tr>\
-<tr><td>(Units)</td><td>mm</td><td>&deg;</td><td>rad/s</td><td>mm/s</td><td>rad/s<sup>2</sup></td><td>mm/s<sup>2</sup></td><td>mm/s<sup>2</sup></td><td>mm/s<sup>2</sup></td></tr>\
-</table>";
+    "</span></div>\
+<div class='table-grid'><span>(Units)</span><span>mm</span><span>&deg;</span><span>rad/s</span><span>mm/s</span><span>rad/s<sup>2</sup></span><span>mm/s<sup>2</sup></span><span>mm/s<sup>2</sup></span><span>mm/s<sup>2</sup></span></div>\
+</div>";
 
   //Acceleration Diagram
   ao = pointtrans(ao, transA);
