@@ -190,10 +190,6 @@ em:current font size
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
   }
-
-  #variables {
-    width: 100%;
-  }
 }
 /* **************************** */
 /* Below 768px */
@@ -251,10 +247,6 @@ em:current font size
     border: solid 0px;
     z-index: 99;
     overflow: hidden;
-  }
-
-  #variables {
-    width: 100%;
   }
 }
 
@@ -329,9 +321,6 @@ em:current font size
     /* height: 75rem; */
   }
 
-  #variables {
-    width: 100%;
-  }
   canvas#simscreen {
     align-self: center;
     display: block;
@@ -350,6 +339,9 @@ em:current font size
   .table-grid span {
     width: 4rem;
     font-size: 1rem;
+  }
+  .title-div h1 {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 22em) {
